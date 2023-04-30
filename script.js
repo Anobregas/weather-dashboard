@@ -1,11 +1,10 @@
-
 // select DOM elements
 const cityFormEl = document.querySelector('#city-form');
 const cityInputEl = document.querySelector('#city-input');
 const searchHistoryEl = document.querySelector('#search-history');
 const currentWeatherEl = document.querySelector('#current-weather');
 const futureWeatherEl = document.querySelector('#future-weather');
-let currentTime = dayjs()//.tz();
+let currentTime = dayjs();
 // configure Day.js to use UTC and local timezone
 dayjs.extend(dayjs_plugin_utc);
 dayjs.extend(dayjs_plugin_timezone);
@@ -26,9 +25,6 @@ function handleFormSubmit(event) {
     .then(data => {
 
       const city = data.name;
-      
-      // get current time for forecast
-      // let currentTime = dayjs().tz();
       
       // add city to search history
       if (!searchHistory.includes(city)) {
