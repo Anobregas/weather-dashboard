@@ -42,5 +42,5 @@
  ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)(https://choosealicense.com/licenses/mit/)
 
 ## screen-shot
-![screenShot](/weather-dashboard/images/Screenshot%202023-04-29%20at%208.00.55%20PM.png)
+![screenShot](/images/Screenshot%202023-04-29%20at%208.00.55%20PM.png)
 
